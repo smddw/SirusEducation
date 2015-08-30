@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="950.0" styleClass="mainFxmlClass" stylesheets="@../css/commonStyles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.UserUIController">
+   <children>
+      <Label id="bg" layoutY="1.0" prefHeight="550.0" prefWidth="950.0" stylesheets="@../css/commonStyles.css" />
+      <ImageView fitHeight="51.0" fitWidth="54.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/server-administrator-icon.png" />
+         </image></ImageView>
+      <Separator layoutY="73.0" prefHeight="3.0" prefWidth="950.0" />
+      <Label layoutX="127.0" layoutY="33.0" text="-   Define all User details you have in your property." />
+      <Label layoutX="81.0" layoutY="27.0" text="User">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="150.0" layoutX="788.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo-small.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="393.0" fitWidth="950.0" layoutY="156.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../image/s1_oip_wave.png" />
+         </image>
+      </ImageView>
+      <TitledPane animated="false" collapsible="false" layoutX="8.0" layoutY="86.0" prefHeight="199.0" prefWidth="327.0" text="General Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <TextField id="tb8" fx:id="txtUsername" layoutX="128.0" layoutY="167.0" onKeyReleased="#txtUsernameKR" prefHeight="25.0" prefWidth="200.0" promptText="Enter User name" />
+      <Label layoutX="15.0" layoutY="171.0" text="User name" />
+      <Label layoutX="15.0" layoutY="210.0" text="Password" />
+      <Label layoutX="15.0" layoutY="248.0" text="Confirm Password" />
+      <PasswordField id="tb8" fx:id="txtPassword" layoutX="128.0" layoutY="206.0" onKeyReleased="#txtPasswordKR" prefHeight="27.0" prefWidth="200.0" promptText="Enter Password" />
+      <TitledPane animated="false" collapsible="false" layoutX="8.0" layoutY="298.0" prefHeight="242.0" prefWidth="327.0" text="Role Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <ListView id="tb8" fx:id="lstLeft" layoutX="15.0" layoutY="340.0" prefHeight="149.0" prefWidth="126.0" />
+      <ListView id="tb8" fx:id="lstRight" layoutX="201.0" layoutY="340.0" prefHeight="149.0" prefWidth="126.0" />
+      <Button id="rich-blue" fx:id="btnRightAll" layoutX="146.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnRightAllAP" prefHeight="25.0" prefWidth="50.0" text="&gt;&gt;" />
+      <Button id="rich-blue" fx:id="btnRight" layoutX="146.0" layoutY="386.0" mnemonicParsing="false" onAction="#btnRightAP" prefHeight="25.0" prefWidth="50.0" text="&gt;" />
+      <Button id="rich-blue" fx:id="btnLeft" layoutX="146.0" layoutY="421.0" mnemonicParsing="false" onAction="#btnLeftAP" prefHeight="25.0" prefWidth="50.0" text="&lt;" />
+      <Button id="rich-blue" fx:id="btnLeftAll" layoutX="146.0" layoutY="456.0" mnemonicParsing="false" onAction="#btnLeftAllAP" prefHeight="25.0" prefWidth="50.0" text="&lt;&lt;" />
+      <Button id="rich-blue" fx:id="btnClear" layoutX="259.0" layoutY="505.0" mnemonicParsing="false" onAction="#btnClearAP" prefHeight="10.0" prefWidth="70.0" text="Clear" textAlignment="CENTER" />
+      <Button id="rich-blue" fx:id="btnDelete" layoutX="177.0" layoutY="505.0" mnemonicParsing="false" onAction="#btnDeleteAP" prefHeight="10.0" prefWidth="70.0" text="Delete" textAlignment="CENTER" />
+      <Button id="rich-blue" fx:id="btnUpdate" ellipsisString="" layoutX="96.0" layoutY="505.0" mnemonicParsing="false" onAction="#btnUpdateAP" prefHeight="10.0" prefWidth="70.0" text="Update" />
+      <Button id="rich-blue" fx:id="btnAdd" ellipsisString="" layoutX="15.0" layoutY="505.0" mnemonicParsing="false" onAction="#btnAddAP" prefHeight="10.0" prefWidth="70.0" text="Add" textAlignment="CENTER" />
+      <Label layoutX="15.0" layoutY="132.0" text="Employee" />
+      <ComboBox id="combo" fx:id="cmbEmployee" layoutX="128.0" layoutY="128.0" onAction="#cmbEmployeeAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Employee" />
+      <TitledPane animated="false" collapsible="false" layoutX="384.0" layoutY="86.0" prefHeight="90.0" prefWidth="556.0" text="Search Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <ComboBox id="combo" fx:id="cmbRoleSearch" layoutX="431.0" layoutY="128.0" onAction="#cmbRoleSearchAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Role" />
+      <Label layoutX="390.0" layoutY="132.0" text="Role" />
+      <Label layoutX="648.0" layoutY="132.0" text="User" />
+      <Button id="rich-blue" fx:id="btnReset" layoutX="891.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnResetAP" text="Reset" />
+      <TextField id="combo" fx:id="txtUser" layoutX="688.0" layoutY="128.0" onKeyReleased="#txtUserKR" prefHeight="25.0" prefWidth="200.0" promptText="Enter user name for search" />
+      <TitledPane animated="false" collapsible="false" layoutX="384.0" layoutY="219.0" prefHeight="322.0" prefWidth="556.0" text="Results">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <TableView fx:id="tblUser" layoutX="391.0" layoutY="264.0" onKeyReleased="#tblUserKR" onMouseClicked="#tblUserMC" opacity="0.9" prefHeight="200.0" prefWidth="540.0">
+        <columns>
+          <TableColumn fx:id="tbcEmpName" prefWidth="264.0" text="Employee Name" />
+          <TableColumn fx:id="tbcRole" minWidth="0.0" prefWidth="275.0" text="Role" />
+        </columns>
+      </TableView>
+      <Pagination fx:id="paginate" layoutX="556.0" layoutY="468.0" prefHeight="64.0" prefWidth="200.0" />
+      <Label fx:id="labRecordCount" layoutX="450.0" layoutY="225.0" text="[ 0 Record(s) Found ]">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField id="tb8" fx:id="txtConfirmPassword" layoutX="128.0" layoutY="245.0" onKeyReleased="#txtConfirmPasswordKR" prefHeight="27.0" prefWidth="200.0" promptText="Confirm Password" />
+   </children>
+</AnchorPane>

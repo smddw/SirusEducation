@@ -1,0 +1,184 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2015, 10:30:07 PM
+    Author     : Lucifer-PC
+*/
+
+#rich-blue {
+    -fx-background-color: 
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-width:60px;
+    -fx-height:10px;
+}
+
+#rich-blue:hover{
+    -fx-background-color: 
+        #000000,
+        linear-gradient(aqua, #2f4b8f),
+        linear-gradient(aqua, #263e75),
+        linear-gradient(aqua, #223768);
+}
+
+#rich-blue:pressed {
+    -fx-padding: 5 5 5 5;
+}
+
+#rich-blue Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+
+#tb8 {
+    -fx-width: 200px;
+    -fx-border-color:#3366FF;
+}
+
+#combo {
+    -fx-width: 200px;
+    -fx-border-color:#3366FF;
+    -fx-background-color:#ffffff;
+}
+
+#label-separator {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #5F7E9D 100%),
+        #5F7E9D,
+        #5F7E9D,
+        radial-gradient(center 50% 50%, radius 100%, #5F7E9D, #5F7E9D);
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    /*    -fx-font-weight:regular;*/
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "System";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 14px;
+    -fx-padding: 2 10 2 10;
+}
+
+#bg{    
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #ffffff 0%, #ffffff 100%),
+        #ffffff,
+        #ffffff,
+        radial-gradient(center 50% 50%, radius 100%, #ffffff, #ffffff); 
+}
+
+#top{
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #bfbdb8 0%, #bfbdb8 100%),
+        #bfbdb8,
+        #bfbdb8,
+        radial-gradient(center 50% 50%, radius 100%, #bfbdb8, #bfbdb8);
+
+}
+
+.titled-pane > .title {
+    -fx-color: #8AC6FF;
+    -fx-border-color:#756a6a;
+}
+
+.titled-pane > *.content 
+{
+    -fx-background-color: null;
+    -fx-border-color:#756a6a;
+}
+
+.separator{
+    -fx-background-color: #426ab7;
+    -fx-background-radius: 2;
+}
+
+#NumberSpinnerArrow {
+    -fx-fill: gray;
+    -fx-stroke: gray;
+    /*        -fx-effect: innershadow( gaussian , black , 2 , 0.6 , 1 , 1 )*/
+}
+#ButtonsBox {
+    -fx-border-color:#426ab7;
+    -fx-border-width: 1 1 1 0;
+    -fx-border-radius: 0 3 3 0;
+    /*    -fx-border-radius: 0 0 0 0;*/
+}
+#SpinnerButtonUp {
+    -fx-background-insets: 0;
+    -fx-background-radius:0 3 0 0;
+    /*    -fx-background-radius:0;*/
+}
+#SpinnerButtonDown {
+    -fx-background-insets: 0;
+    -fx-background-radius:0 0 3 0;
+    /*    -fx-background-radius:0;*/
+}
+
+.bad{
+	-fx-background-color: red,linear-gradient(to bottom, derive(red,60%) 5%,derive(red,90%) 40%); -fx-border-color:#3366FF;
+}
+
+.best{
+	-fx-background-color: green,linear-gradient(to bottom, derive(green,60%) 5%,derive(green,90%) 40%); -fx-border-color:#3366FF;
+}
+
+#vacant {
+    -fx-border-color:#808080;
+    -fx-background-color: #6CBB3C;
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0,0,0,0;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-width:60px;
+    -fx-height:10px;
+}
+
+#vacant-clean {
+    -fx-border-color:#808080;
+    -fx-background-color:#ADD8E6;
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0,0,0,0;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-width:60px;
+    -fx-height:10px;
+}
+
+#occupied {
+    -fx-border-color:#808080;
+    -fx-background-color: rgba(255, 248, 33, .4);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0,0,0,0;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-width:60px;
+    -fx-height:10px;
+}
+
+#confirmed {
+    -fx-border-color:#808080;
+    -fx-background-color: #46C7C7;
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0,0,0,0;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-width:60px;
+    -fx-height:10px;
+}
+
+#dirty {
+    -fx-border-color:#808080;
+    -fx-background-color: #C9BE62;
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 0,0,0,0;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-width:60px;
+    -fx-height:10px;
+}

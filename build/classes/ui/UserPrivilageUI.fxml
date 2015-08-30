@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="950.0" styleClass="mainFxmlClass" stylesheets="@../css/commonStyles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.UserPrivilageUIController">
+   <children>
+      <Label id="bg" prefHeight="400.0" prefWidth="950.0" />
+      <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/gtk-dialog-authentication.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="3.0" layoutY="68.0" prefHeight="0.0" prefWidth="941.0" />
+      <Label layoutX="159.0" layoutY="33.0" text="-    Define all your Privilage Details you have in your property." />
+      <Label layoutX="81.0" layoutY="27.0" text="Privilage">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="150.0" layoutX="787.0" layoutY="5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/logo-small.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="362.0" fitWidth="950.0" layoutY="38.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../image/s1_oip_wave.png" />
+         </image>
+      </ImageView>
+      <TitledPane animated="false" collapsible="false" layoutX="8.0" layoutY="85.0" prefHeight="124.0" prefWidth="338.0" text="General Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <TitledPane animated="false" collapsible="false" layoutX="8.0" layoutY="224.0" prefHeight="145.0" prefWidth="338.0" text="Privilage Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <TitledPane animated="false" collapsible="false" layoutX="384.0" layoutY="85.0" prefHeight="85.0" prefWidth="560.0" text="Search Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <TitledPane animated="false" collapsible="false" layoutX="384.0" layoutY="186.0" prefHeight="184.0" prefWidth="560.0" text="Results">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <ComboBox id="combo" fx:id="cmbRole" layoutX="132.0" layoutY="129.0" onAction="#cmbRoleAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Role" />
+      <Label layoutX="19.0" layoutY="133.0" text="Role" />
+      <Label layoutX="19.0" layoutY="172.0" text="Module" />
+      <ComboBox id="combo" fx:id="cmbModule" layoutX="132.0" layoutY="168.0" onAction="#cmbModuleAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Module" />
+      <CheckBox fx:id="cbxSelect" layoutX="19.0" layoutY="273.0" mnemonicParsing="false" text="Select" />
+      <CheckBox fx:id="cbxInsert" layoutX="103.0" layoutY="273.0" mnemonicParsing="false" text="Insert" />
+      <CheckBox fx:id="cbxUpdate" layoutX="185.0" layoutY="273.0" mnemonicParsing="false" text="Update" />
+      <CheckBox fx:id="cbxDelete" layoutX="277.0" layoutY="273.0" mnemonicParsing="false" text="Delete" />
+      <Button id="rich-blue" fx:id="btnClear" layoutX="265.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnClearAP" prefWidth="70.0" text="Clear" />
+      <Button id="rich-blue" fx:id="btnDelete" layoutX="183.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnDeleteAP" prefWidth="70.0" text="Delete" />
+      <Button id="rich-blue" fx:id="btnUpdate" layoutX="101.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnUpdateAP" prefWidth="70.0" text="Update" />
+      <Button id="rich-blue" fx:id="btnAdd" layoutX="19.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnAddAP" prefWidth="70.0" text="Add" />
+      <ComboBox id="combo" fx:id="cmbModuleSearch" layoutX="446.0" layoutY="129.0" onAction="#cmbModuleSearchAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Module" />
+      <Label layoutX="394.0" layoutY="133.0" text="Module" />
+      <Label layoutX="657.0" layoutY="133.0" text="Role" />
+      <ComboBox id="combo" fx:id="cmbRoleSearch" layoutX="691.0" layoutY="129.0" onAction="#cmbRoleSearchAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Role" />
+      <Button id="rich-blue" fx:id="btnReset" layoutX="894.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnResetAP" text="Reset" />
+      <Label fx:id="labRecordCount" layoutX="456.0" layoutY="192.0" text="[ 0 Record(s) Found ]">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblPrivilage" layoutX="393.0" layoutY="224.0" onKeyReleased="#tblPrivilageKR" onMouseClicked="#tblPrivilageMC" opacity="0.9" prefHeight="100.0" prefWidth="543.0">
+        <columns>
+          <TableColumn fx:id="tbcRole" prefWidth="122.0" text="Role" />
+          <TableColumn fx:id="tbcModule" prefWidth="131.0" text="Module" />
+            <TableColumn fx:id="tbcSelect" prefWidth="76.0" text="Select" />
+            <TableColumn fx:id="tbcInsert" prefWidth="71.0" text="Insert" />
+            <TableColumn fx:id="tbcUpdate" prefWidth="75.0" text="Update" />
+            <TableColumn fx:id="tbcDelete" prefWidth="66.0" text="Delete" />
+        </columns>
+      </TableView>
+      <Pagination fx:id="paginate" layoutX="553.0" layoutY="326.0" prefHeight="41.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="bg" layoutX="10.0" layoutY="10.0" prefHeight="550.0" prefWidth="1100.0" stylesheets="@../css/commonStyles.css" />
+      <TitledPane animated="false" collapsible="false" layoutX="14.0" layoutY="14.0" prefHeight="362.0" prefWidth="329.0" text="Other Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <Label layoutX="31.0" layoutY="52.0" text="Case ID " />
+      <Label layoutX="31.0" layoutY="118.0" text="Office Fee" />
+      <Label layoutX="32.0" layoutY="153.0" text="Status" />
+      <Label layoutX="37.0" layoutY="191.0" text="CEO" />
+      <TextField layoutX="124.0" layoutY="48.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField layoutX="124.0" layoutY="114.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField layoutX="125.0" layoutY="149.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="33.0" layoutY="232.0" text="Applay Date" />
+      <Label layoutX="32.0" layoutY="268.0" text="Country" />
+      <TextField layoutX="125.0" layoutY="228.0" prefHeight="25.0" prefWidth="202.0" />
+      <TitledPane animated="false" collapsible="false" layoutX="15.0" layoutY="381.0" prefHeight="104.0" prefWidth="329.0" text="Offer Details">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <TextField layoutX="134.0" layoutY="453.0" prefHeight="25.0" prefWidth="192.0" />
+      <Label layoutX="34.0" layoutY="417.0" text="Offer Acceptance" />
+      <Label layoutX="34.0" layoutY="457.0" text="Offer Date" />
+      <Button layoutX="20.0" layoutY="512.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Back" />
+      <Button layoutX="151.0" layoutY="512.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Clear" />
+      <Button layoutX="219.0" layoutY="512.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Delete" />
+      <Button layoutX="287.0" layoutY="512.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Insert" />
+      <Button layoutX="84.0" layoutY="512.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Update" />
+      <TitledPane collapsible="false" layoutX="373.0" layoutY="154.0" prefHeight="331.0" prefWidth="687.0" text="Results">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <TableView fx:id="tblEmployee" layoutX="385.0" layoutY="199.0" onKeyReleased="#tblEmployeeKR" onMouseClicked="#tblEmployeeMC" opacity="0.9" prefHeight="279.0" prefWidth="662.0">
+         <columns>
+            <TableColumn fx:id="tbcName" prefWidth="105.0" text="Name" />
+            <TableColumn fx:id="tbcGender" prefWidth="161.0" text="Address" />
+            <TableColumn fx:id="tbcCivilStatus" text="Phone 1" />
+            <TableColumn fx:id="tbcDesignation" minWidth="5.0" prefWidth="74.0" text="Phone 2" />
+            <TableColumn fx:id="tbcMobileNo" minWidth="0.0" prefWidth="160.0" text="Email" />
+            <TableColumn fx:id="tbcEmail" prefWidth="81.0" text="Office Fee" />
+         </columns>
+      </TableView>
+      <Label layoutX="34.0" layoutY="83.0" text="Case Type" />
+      <CheckBox layoutX="125.0" layoutY="83.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" text="Student" />
+      <CheckBox layoutX="226.0" layoutY="83.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" text="Employee" />
+      <ComboBox layoutX="134.0" layoutY="413.0" prefHeight="25.0" prefWidth="192.0" promptText="Select Yes / No" />
+      <ComboBox layoutX="124.0" layoutY="187.0" prefHeight="25.0" prefWidth="202.0" promptText="Select Yes / No" />
+      <ComboBox layoutX="124.0" layoutY="264.0" prefHeight="25.0" prefWidth="202.0" />
+      <TitledPane collapsible="false" layoutX="373.0" layoutY="14.0" prefHeight="131.0" prefWidth="687.0" text="Results">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <Label layoutX="385.0" layoutY="52.0" text="Search by ID" />
+      <Label layoutX="385.0" layoutY="83.0" text="Search by NIC" />
+      <TextField layoutX="464.0" layoutY="48.0" prefHeight="25.0" prefWidth="192.0" />
+      <TextField layoutX="464.0" layoutY="83.0" prefHeight="25.0" prefWidth="192.0" />
+      <TextField layoutX="855.0" layoutY="83.0" prefHeight="25.0" prefWidth="192.0" />
+      <TextField layoutX="855.0" layoutY="48.0" prefHeight="25.0" prefWidth="192.0" />
+      <Label layoutX="724.0" layoutY="87.0" text="Search by Case ID" />
+      <Label layoutX="724.0" layoutY="52.0" text="Search by Name" />
+      <TextField layoutX="124.0" layoutY="301.0" prefHeight="25.0" prefWidth="202.0" />
+      <TextField layoutX="124.0" layoutY="339.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="34.0" layoutY="305.0" text="University" />
+      <Label layoutX="34.0" layoutY="343.0" text="Course" />
+   </children>
+</AnchorPane>

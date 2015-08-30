@@ -1,0 +1,67 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+#container {
+    -fx-padding: 3px;
+    -fx-background-color: 
+        linear-gradient(#ffffff 0%, #ced3da 4%, #c1c6cf 17%, 
+        #b4bbc5 18%, #e5ebeb 100%);
+}
+
+#toolbarContainer {
+    -fx-background-color: 
+        linear-gradient(#dae0e7 0%, #ced4dd 14%, 
+        #c8ced7 15%, #dfe5e6 100%),
+        linear-gradient(#bdbfc1 0%, #9a9c9f 14%, 
+        #888b90 15%, #838686 100%),
+        linear-gradient(#eef1f6 0%, #e1e6ee 14%, 
+        #d5dbe7 15%, #eef4f4 79%, 
+        #ced4e6 79%, #afb6c8 100%);
+
+    -fx-background-insets: 1 0 1 1, 1, 2;
+    -fx-background-radius: 5,4,3;
+    -fx-padding: 4 8 0 8;
+}
+
+/*#toolbarContainer:hover {
+    -fx-background-color: 
+        linear-gradient(#ffffff 0%, #ffffff 14%, 
+        #ffffff 15%, #ffffff 100%),
+        linear-gradient(#ffffff 0%, #ffffff 14%, 
+        #ffffff 15%, #ffffff 100%),
+        linear-gradient(#ffffff 0%, #ffffff 14%, 
+        #ffffff 15%, #ffffff 79%, 
+        #ffffff 79%, #ffffff 100%);
+
+    -fx-background-insets: 1 0 1 1, 1, 2;
+    -fx-background-radius: 5,4,3;
+    -fx-padding: 4 8 0 8;
+}*/
+
+
+#ribbonToggleButton {
+    -fx-text-fill: #000000;
+    -fx-background-color: 
+        linear-gradient(#dae0e7 0%, #ced4dd 14%, #c8ced7 15%, #dfe5e6 100%),
+        linear-gradient(#bdbfc1 0%, #9a9c9f 14%, #888b90 15%, #838686 100%),
+        linear-gradient(#eef1f6 0%, #e1e6ee 14%, #d5dbe7 15%, #eef4f4 79%, 
+        #ced4e6 79%, #afb6c8 100%);
+
+    -fx-background-insets: 1 0 1 1, 1, 2 ;
+    -fx-background-radius: 5,4,3;
+    -fx-padding: 5 6 5 6;
+}
+
+#ribbonToggleButton:hover {
+    
+    -fx-background-color: 
+        linear-gradient(#dae0e7 0%, #ced4dd 14%, #c8ced7 15%, #dfe5e6 100%),
+        linear-gradient(#bdbfc1 0%, #9a9c9f 14%, #888b90 15%, #838686 100%),
+        linear-gradient(#fef7d5 0%, #fae5a8 14%, #ffd048 15%, #ffe59f 78%, 
+        #ffe498 79%, #fff9cc 100%);  
+}

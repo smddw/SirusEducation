@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="1100.0" styleClass="mainFxmlClass" stylesheets="@../css/commonStyles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.EmployeeUIController">
+   <children>
+      <Label id="bg" prefHeight="630.0" prefWidth="1100.0" />
+      <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="81.0" layoutY="27.0" text="Employee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="170.0" layoutY="33.0" text="-   Define all Employee Details you have in your property." />
+      <ImageView fitHeight="64.0" fitWidth="150.0" layoutX="937.0" layoutY="5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/logo-small.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="2.0" layoutY="79.0" prefHeight="3.0" prefWidth="1094.0" />
+      <ImageView fitHeight="470.0" fitWidth="1100.0" layoutY="200.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../image/s1_oip_wave.png" />
+         </image>
+      </ImageView>
+      <TitledPane collapsible="false" layoutX="14.0" layoutY="96.0" prefHeight="336.0" prefWidth="334.0" text="General Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <Label layoutX="24.0" layoutY="145.0" text="Name" />
+      <TextField id="tb8" fx:id="txtName" layoutX="137.0" layoutY="141.0" onKeyReleased="#txtNameKR" prefHeight="25.0" prefWidth="200.0" promptText="Enter Name" />
+      <Label layoutX="24.0" layoutY="187.0" text="Gender" />
+      <ComboBox id="combo" fx:id="cmbGender" layoutX="137.0" layoutY="183.0" onAction="#cmbGenderAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Gender" />
+      <ComboBox id="combo" fx:id="cmbCivilStatus" layoutX="137.0" layoutY="224.0" onAction="#cmbCivilStatusAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Civil Status" />
+      <Label layoutX="24.0" layoutY="228.0" text="Civil Status" />
+      <TextField id="tb8" fx:id="txtAddress" layoutX="137.0" layoutY="265.0" onKeyReleased="#txtAddressKR" prefHeight="25.0" prefWidth="200.0" promptText="Enter Address" />
+      <Label layoutX="24.0" layoutY="270.0" text="Address" />
+      <Label layoutX="24.0" layoutY="311.0" text="DOB" />
+      <DatePicker id="tb8" fx:id="dtpDOB" layoutX="137.0" layoutY="307.0" onAction="#dtpDOBAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Date of Birth" />
+      <Label layoutX="24.0" layoutY="352.0" text="Designation" />
+      <ComboBox id="combo" fx:id="cmbDesignation" layoutX="137.0" layoutY="349.0" onAction="#cmbDesignationAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Designation" />
+      <TitledPane animated="false" collapsible="false" layoutX="14.0" layoutY="443.0" prefHeight="211.0" prefWidth="334.0" text="Contact Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <TextField id="tb8" fx:id="txtMobileNo" layoutX="137.0" layoutY="487.0" onKeyReleased="#txtMobileNoKR" prefHeight="25.0" prefWidth="200.0" promptText="Enter Mobile No" />
+      <Label layoutX="24.0" layoutY="495.0" text="Mobile No" />
+      <Label layoutX="24.0" layoutY="538.0" text="Land No" />
+      <TextField id="tb8" fx:id="txtLandNo" layoutX="137.0" layoutY="528.0" onKeyReleased="#txtLandNoKR" prefHeight="25.0" prefWidth="200.0" promptText="Enter Land No" />
+      <TextField id="tb8" fx:id="txtEmail" layoutX="137.0" layoutY="569.0" onKeyReleased="#txtEmailKR" prefHeight="25.0" prefWidth="200.0" promptText="Enter Email" />
+      <Label layoutX="24.0" layoutY="580.0" text="Email" />
+      <Button id="rich-blue" fx:id="btnClear" layoutX="268.0" layoutY="615.0" mnemonicParsing="false" onAction="#btnClearAP" prefHeight="10.0" prefWidth="70.0" text="Clear" textAlignment="CENTER" />
+      <Button id="rich-blue" fx:id="btnDelete" layoutX="186.0" layoutY="615.0" mnemonicParsing="false" onAction="#btnDeleteAP" prefHeight="10.0" prefWidth="70.0" text="Delete" textAlignment="CENTER" />
+      <Button id="rich-blue" fx:id="btnUpdate" ellipsisString="" layoutX="105.0" layoutY="615.0" mnemonicParsing="false" onAction="#btnUpdateAP" prefHeight="10.0" prefWidth="70.0" text="Update" />
+      <Button id="rich-blue" fx:id="btnAdd" ellipsisString="" layoutX="24.0" layoutY="615.0" mnemonicParsing="false" onAction="#btnAddAP" prefHeight="10.0" prefWidth="70.0" text="Add" textAlignment="CENTER" />
+      <DatePicker id="tb8" fx:id="dtpAssignDate" layoutX="137.0" layoutY="390.0" onAction="#dtpAssignDateAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Assign Date" />
+      <Label layoutX="24.0" layoutY="393.0" text="Assign Date" />
+      <TitledPane collapsible="false" layoutX="402.0" layoutY="96.0" prefHeight="133.0" prefWidth="685.0" text="Search Information">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <TitledPane collapsible="false" layoutX="402.0" layoutY="274.0" prefHeight="381.0" prefWidth="685.0" text="Results">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TitledPane>
+      <TextField id="tb8" fx:id="txtNameSearch" layoutX="481.0" layoutY="141.0" onKeyReleased="#txtNameSearchKR" prefHeight="25.0" prefWidth="200.0" promptText="Enter Name for Search" />
+      <Label layoutX="414.0" layoutY="145.0" text="Name" />
+      <Label layoutX="713.0" layoutY="145.0" text="Mobile" />
+      <TextField id="tb8" fx:id="txtMobileSearch" layoutX="792.0" layoutY="141.0" onKeyReleased="#txtMobileSearchKR" prefHeight="25.0" prefWidth="200.0" promptText="Enter Mobile for Search" />
+      <ComboBox id="combo" fx:id="cmbGenderSearch" layoutX="481.0" layoutY="183.0" onAction="#cmbGenderSearchAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Gender" />
+      <Label layoutX="414.0" layoutY="187.0" text="Gender" />
+      <Label layoutX="713.0" layoutY="187.0" text="Designation" />
+      <ComboBox id="combo" fx:id="cmbDesignationSearch" layoutX="792.0" layoutY="183.0" onAction="#cmbDesignationSearchAP" prefHeight="25.0" prefWidth="200.0" promptText="Select Designation" />
+      <Button id="rich-blue" fx:id="btnReset" layoutX="1020.0" layoutY="182.0" mnemonicParsing="false" onAction="#btnResetAP" prefHeight="25.0" prefWidth="52.0" text="Reset" />
+      <Button id="rich-blue" fx:id="btnSearch" layoutX="1020.0" layoutY="141.0" mnemonicParsing="false" onAction="#btnSearchAP" text="Search" />
+      <Label fx:id="labRecordCount" layoutX="468.0" layoutY="280.0" text="[ 0 Record(s) Found ]">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblEmployee" layoutX="414.0" layoutY="319.0" onKeyReleased="#tblEmployeeKR" onMouseClicked="#tblEmployeeMC" opacity="0.9" prefHeight="279.0" prefWidth="662.0">
+         <columns>
+            <TableColumn fx:id="tbcName" prefWidth="130.0" text="Name" />
+            <TableColumn fx:id="tbcGender" prefWidth="90.0" text="Gender" />
+            <TableColumn fx:id="tbcCivilStatus" prefWidth="99.0" text="Civil Status" />
+            <TableColumn fx:id="tbcDesignation" minWidth="5.0" prefWidth="90.0" text="Designation" />
+            <TableColumn fx:id="tbcMobileNo" minWidth="0.0" prefWidth="102.0" text="Mobile No" />
+            <TableColumn fx:id="tbcEmail" prefWidth="150.0" text="Email" />
+         </columns>
+      </TableView>
+      <Pagination fx:id="paginate" layoutX="642.0" layoutY="606.0" prefHeight="38.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

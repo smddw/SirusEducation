@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="728.0" prefWidth="1366.0" styleClass="mainFxmlClass" stylesheets="@../css/commonStyles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainWindowController">
+    <children>
+      <Label id="bg" layoutY="1.0" prefHeight="728.0" prefWidth="1366.0">
+         <stylesheets>
+            <URL value="@../css/mainwindow.css" />
+            <URL value="@../css/commonStyles.css" />
+         </stylesheets>
+      </Label>
+      <ImageView fitHeight="453.0" fitWidth="1032.0" layoutX="326.0" layoutY="231.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../image/s1_oip_wave.png" />
+         </image>
+      </ImageView>
+      <TabPane id="tab-pane" prefHeight="153.0" prefWidth="1366.0" stylesheets="@../css/ribbon.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Front Office">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="394.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnStudent" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnStudentAP" prefHeight="50.0" prefWidth="50.0" text="Student">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/student.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnGroup" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnGroupAP" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Group">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/user.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="169.0" layoutY="87.0" text="Student" />
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tblBtnLedger" contentDisplay="TOP" layoutX="126.0" layoutY="1.0" mnemonicParsing="false" onAction="#tblBtnLedgerAP" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Ledger">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Icon_education.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="318.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Folio">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/document_pencil.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="190.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Database">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/db.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="254.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Late">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/alarm_icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="394.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Walk-In">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/icon_hotelbooking.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Group">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/family-forum-group-icone-4294-48.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="155.0" layoutY="87.0" text="Reservation" />
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="126.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Ledger">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Neat%20Calendar%20Widget.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="318.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Express">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/view_refresh.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="190.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Check-In">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/booking.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="254.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Ch-Out">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/header_checkout.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="202.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Dirty">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/clean-master_29304.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Change">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/family-forum-group-icone-4294-48.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="76.0" layoutY="87.0" text="Room" />
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="126.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Note">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/comment_add_big.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Back Office">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnBuilding" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnBuildingAP" prefHeight="50.0" prefWidth="50.0" text="Building">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Apartment-Building.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnFloor" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnFloorAP" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Floor">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/App-kcmdf-cubes-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="37.0" layoutY="87.0" text="Property" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="266.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnRoomType" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnRoomTypeAP" prefHeight="50.0" prefWidth="50.0" text="Type">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/abacus-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnRoomRate" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnRoomRateAP" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Rate">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/finance.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="104.0" layoutY="87.0" text="Room" />
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnRoom" contentDisplay="TOP" layoutX="190.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnRoomAP" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Room">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/roomicon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnAminities" contentDisplay="TOP" layoutX="126.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnAminitiesAP" prefHeight="50.0" prefWidth="50.0" text="Services">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Gnome-Computer-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="202.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnServices" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnServicesAP" prefHeight="50.0" prefWidth="50.0" text="Services">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/service.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnMeal" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnMealAP" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Meal">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/toast.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="78.0" layoutY="87.0" text="Hotel" />
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnFood" contentDisplay="TOP" layoutX="126.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnFoodAP" prefHeight="50.0" prefWidth="50.0" text="Food">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/648.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Insert">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Antivirus-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Undo">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/2585.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="28.0" layoutY="87.0" text="Transaction" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="202.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnSeason" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnSeasonAP" prefHeight="50.0" prefWidth="50.0" text="Season">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/cloud.rain.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnSeasonType" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnSeasonTypeAP" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Se. Type">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/icon-48-category-add.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="55.0" layoutY="87.0" text="Source/Season" />
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="126.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Source">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/hand_point.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Administration">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="113.0" prefWidth="211.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="198.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnNewUser" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnNewUserAP" prefHeight="50.0" prefWidth="50.0" text="New">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/server-administrator-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <Label layoutX="46.0" layoutY="87.0" text="User" />
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tglBtnPrivilage" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnPrivilageAP" prefHeight="50.0" prefWidth="50.0" text="Privilage">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/gtk-dialog-authentication.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="125.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Role">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/server-administrator-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="113.0" prefWidth="241.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="230.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" fx:id="tblBtnNewEmp" contentDisplay="TOP" mnemonicParsing="false" onAction="#tblBtnNewEmpAP" prefHeight="50.0" prefWidth="50.0" text="New">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/user.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <Label layoutX="84.0" layoutY="87.0" text="Employee" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="GRM">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Template">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/20100615143456!Icon-template.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="24.0" layoutY="87.0" text="Configuration" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="394.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Incident">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Event.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Reply">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Gnome-Mail-Reply-Sender-64.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="168.0" layoutY="87.0" text="Guest" />
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="190.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Follow">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Marker.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="126.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Inquery">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/help-contents.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="318.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Feedbck">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/table-icone-9618-48.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="254.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="History">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/1391160192_history.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Masters">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/server-administrator-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Template">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/20100615143456!Icon-template.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                          <Label layoutX="46.0" layoutY="87.0" text="Other" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Laundry">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Walk-In">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Guest.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Group">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Vista-Login_Manager.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="270.0">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Banquet">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Walk-In">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Guest.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Group">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Vista-Login_Manager.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="270.0">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Minbar">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Walk-In">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Guest.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Group">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Vista-Login_Manager.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="270.0">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="House Keeping">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Walk-In">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Guest.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Group">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Vista-Login_Manager.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="270.0">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Payroll">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0" />
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="270.0">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Report">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Walk-In">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Guest.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Group">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Vista-Login_Manager.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="270.0">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Tools &amp; Utilities">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Walk-In">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Guest.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Group">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Vista-Login_Manager.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="270.0">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Help">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="578.0">
+                     <children>
+                        <HBox id="container" layoutX="-1.0" layoutY="-1.0" prefHeight="119.0" prefWidth="1366.0" stylesheets="@../css/mainwindow.css">
+                           <children>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="137.0">
+                                 <children>
+                                    <Pane prefHeight="109.0" prefWidth="138.0">
+                                       <children>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="-2.0" layoutY="1.0" mnemonicParsing="false" onAction="#tglBtnWalkInAP" prefHeight="50.0" prefWidth="50.0" text="Walk-In">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Guest.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <stylesheets>
+                                                <URL value="@../css/mainwindow.css" />
+                                                <URL value="@../css/ribbon.css" />
+                                             </stylesheets>
+                                          </ToggleButton>
+                                          <ToggleButton id="ribbonToggleButton" contentDisplay="TOP" layoutX="62.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/mainwindow.css" text="Group">
+                                             <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                                                   <image>
+                                                      <Image url="@../image/Vista-Login_Manager.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </ToggleButton>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </VBox>
+                              <VBox id="toolbarContainer" prefHeight="90.0" prefWidth="270.0">
+                                 <children>
+                                    <Pane prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <TitledPane animated="false" collapsible="false" layoutX="4.0" layoutY="153.0" prefHeight="507.0" prefWidth="325.0" text="Quick Information" />
+   </children>
+</AnchorPane>

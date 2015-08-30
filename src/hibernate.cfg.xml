@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sirusdb</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">1234</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.jdbc.batch_size">50</property>
+    <mapping class="entity.Designation"/>
+    <mapping class="entity.Employee"/>
+    <mapping class="entity.Gender"/>
+    <mapping class="entity.Civilstatus"/>
+    <mapping class="entity.Country"/>
+    <mapping class="entity.Module"/>
+    <mapping class="entity.Privilege"/>
+    <mapping class="entity.Role"/>
+    <mapping class="entity.User"/>
+    <mapping class="entity.Course"/>
+    <mapping class="entity.Coursecategory"/>
+    <mapping class="entity.Courseregistration"/>
+    <mapping class="entity.Coursetype"/>
+    <mapping class="entity.Passport"/>
+    <mapping class="entity.Regstatues"/>
+    <mapping class="entity.Student"/>
+    <mapping class="entity.Stustatues"/>
+    <mapping class="entity.University"/>
+  </session-factory>
+</hibernate-configuration>
